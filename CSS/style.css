@@ -32,7 +32,6 @@ header {
 
 #navbarNav {
     justify-content: center;
-
 }
 
 .nav_brand_img {
@@ -41,18 +40,12 @@ header {
 
 .navbar-brand {
     display: none;
-    color: white;
 }
 
 /* boton */
 .navbar-toggler {
     margin: 10px;
     background-color: #e30520;
-}
-
-/* ul */
-#contacto {
-    border: 0px;
 }
 
 /* li */
@@ -85,41 +78,42 @@ main {
     box-shadow: 0px 0px 10px black;
     display: grid;
     grid-template-columns: 2fr 1fr;
-
 }
 
 article {
     padding: 10px;
 }
 
+.paragraph {
+    margin-top: 15px;
+}
+
 .banner {
     background-image: url(../img//banner_banda.jpg);
-}
-
-.monumental_img {
-    width: 100%;
-}
-
-/* Card */
-.card {
+    background-size: 920px;
+    height: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
     display: flex;
-    flex-direction: row;
-    height: 150px;
+    align-items: flex-end
 }
 
-.card-img-top {
-    height: 148px;
-    width: 300px
+.banner>h1 {
+    display: inline-block;
+    color: white;
+    border-bottom: #e30520 5px solid;
+    text-shadow: 0px 0px 10px #000000;
+    margin-left: 10px;
 }
 
 /* Aside */
 aside {
     padding: 10px;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 90px 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
+
 
 /* Reloj */
 .clock_form {
@@ -216,6 +210,27 @@ footer {
     margin: 0px;
 }
 
+/* PAGES */
+
+/* Index */
+/* Card */
+.card {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+.card-img-top {
+    height: 148px;
+    width: 300px
+}
+
+/* Estadio */
+.monumental_img {
+    width: 100%;
+}
+
+
 
 /* Responsive */
 @media screen and (max-width: 991px) {
@@ -243,7 +258,9 @@ footer {
 
     aside {
         display: flex;
+        flex-direction: row;
         height: 200px;
+        justify-content: center;
     }
 
     .aside_table {
@@ -259,6 +276,10 @@ footer {
     main {
         margin: 0px;
     }
+
+    .banner {
+        margin: 0px;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -266,9 +287,6 @@ footer {
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: center;
+
     }
-
-
-
 }
