@@ -96,6 +96,10 @@ article {
     background-image: url(../img//banner_banda.jpg);
 }
 
+.monumental_img {
+    width: 100%;
+}
+
 /* Card */
 .card {
     display: flex;
