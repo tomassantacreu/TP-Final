@@ -113,7 +113,6 @@ aside {
     gap: 10px;
 }
 
-
 /* Reloj */
 .clock_form {
     background-image: url(../img/fondo_reloj.jpg);
@@ -129,7 +128,7 @@ aside {
     height: 80px;
     text-align: center;
     font-size: 55px;
-    background-color: #e3051fc2;
+    background-color: #000000c2;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.329);
     color: white;
@@ -233,7 +232,9 @@ footer {
     display: flex;
     justify-content: end;
     align-items: baseline;
-    margin-top: 19px;
+    margin-top: 14px;
+    text-align: center;
+
 }
 
 .ver_mas {
@@ -243,11 +244,14 @@ footer {
     opacity: 60%;
     width: 35%;
     border-radius: 8px;
+    text-decoration: none;
 }
 
 .ver_mas:hover {
     opacity: 100%;
+    color: white;
 }
+
 
 /* Estadio */
 .monumental_img {
@@ -328,16 +332,17 @@ footer {
     }
 
     .button_container {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
         margin-top: 15px;
         height: 40px;
+        text-align: center;
     }
 
     .ver_mas {
         width: 100%;
         height: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
