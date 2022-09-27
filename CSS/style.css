@@ -1,0 +1,270 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header_img {
+    height: auto;
+    width: 40%;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar,
+.navbar-expand-lg {
+    background-color: #0e0e0e;
+    padding: 0px;
+}
+
+#navbarNav {
+    justify-content: center;
+
+}
+
+.nav_brand_img {
+    width: 20%;
+}
+
+.navbar-brand {
+    display: none;
+    color: white;
+}
+
+/* boton */
+.navbar-toggler {
+    margin: 10px;
+    background-color: #e30520;
+}
+
+/* ul */
+#contacto {
+    border: 0px;
+}
+
+/* li */
+.nav-item {
+    list-style: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    /* color: red; */
+    background-color: #e30520;
+    transition-duration: 600ms;
+}
+
+/* Main */
+main {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+article {
+    padding: 10px;
+}
+
+.banner {
+    background-image: url(../img//banner_banda.jpg);
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+.card-img-top {
+    height: 148px;
+    width: 300px
+}
+
+/* Aside */
+aside {
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 90px 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* Reloj */
+.clock_form {
+    background-image: url(../img/fondo_reloj.jpg);
+    background-size: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.clock {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    font-size: 55px;
+    background-color: #e3051fc2;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+/* Tabla */
+.aside_table {
+    font-size: 16px;
+    border: 2px solid #0e0e0e;
+    text-align: center;
+}
+
+.table_header {
+    background-color: #e30520;
+}
+
+.table_col {
+    border: 1px solid #0e0e0e;
+    padding: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #0e0e0e;
+    color: white;
+    width: 100%;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer_title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 100%;
+}
+
+.footer_list {
+    padding: 0px;
+}
+
+.footer_li_item {
+    list-style: none;
+}
+
+.footer_li_item>a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes_sociales>a {
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+}
+
+.redes_sociales>a:hover {
+    color: #e30520;
+    transition: 1s;
+}
+
+.footer_copyright {
+    text-align: center;
+    color: white;
+    background-color: #e30520;
+}
+
+.footer_copyright>p {
+    margin: 0px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+
+    .navbar-brand {
+        display: block;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .header_img {
+        padding: 5px;
+        height: 50%;
+        width: 50%;
+    }
+
+    main {
+        display: block;
+    }
+
+    aside {
+        display: flex;
+        height: 200px;
+    }
+
+    .aside_table {
+        display: none;
+    }
+
+    .clock_form {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+
+
+
+}
