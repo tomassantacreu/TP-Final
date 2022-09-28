@@ -136,6 +136,25 @@ aside {
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
+.download_link_container {
+    text-align: center;
+}
+
+.download_link {
+    text-decoration: none;
+    text-align: center;
+    background-color: #e30520;
+}
+
+.brandbook {
+    width: 100%;
+    height: auto;
+}
+
+.Brandbook_text {
+    color: white;
+}
+
 /* Tabla */
 .aside_table {
     font-size: 16px;
@@ -221,6 +240,8 @@ footer {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    border: 0px;
+    border-top: 1px solid #b8bab8;
 }
 
 .card-img-top {
@@ -239,7 +260,6 @@ footer {
     align-items: baseline;
     margin-top: 14px;
     text-align: center;
-
 }
 
 .ver_mas {
@@ -369,6 +389,10 @@ footer {
     .clock_form {
         display: none;
     }
+
+    .download_link_container {
+        display: none;
+    }
 }
 
 @media screen and (max-width:548px) {
@@ -377,6 +401,7 @@ footer {
         flex-direction: column;
         width: 100%;
         height: 100%;
+        border-bottom: 1px solid #b8bab8;
     }
 
     .card-img-top {
