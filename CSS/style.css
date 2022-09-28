@@ -188,6 +188,11 @@ footer {
     color: white;
 }
 
+.footer_li_item>a:hover {
+    text-decoration: underline;
+    color: #e30520;
+}
+
 .redes_sociales>a {
     font-size: 400%;
     color: rgb(255, 255, 255);
@@ -265,8 +270,17 @@ footer {
     margin-left: 5px;
 }
 
+.titulo_container:hover {
+    color: #e30520;
+    cursor: pointer;
+}
+
 .titulo_container>img {
     width: 80px;
+}
+
+.titulo_container>img:hover {
+    width: 70px;
 }
 
 .titulos_container {
@@ -274,6 +288,24 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 15px;
+}
+
+.modal-header {
+    background-color: #0e0e0e;
+    color: white;
+}
+
+.btn-close {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
+.modal-body {
+    padding: 25px;
+    background-color: #e30520;
+    color: white;
 }
 
 .modal-body>img {
