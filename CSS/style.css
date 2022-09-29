@@ -73,7 +73,7 @@ header {
 main {
     margin-left: 150px;
     margin-right: 150px;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0px 0px 10px black;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -85,6 +85,7 @@ article {
 
 .paragraph {
     margin-top: 15px;
+    text-align: justify;
 }
 
 .banner {
@@ -232,6 +233,7 @@ footer {
     margin: 0px;
 }
 
+
 /* PAGES */
 
 /* Index */
@@ -275,6 +277,18 @@ footer {
 .ver_mas:hover {
     opacity: 100%;
     color: white;
+}
+
+video {
+    width: 100%;
+}
+
+.video {
+    margin-top: 40px;
+    background-color: #e30520;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
 }
 
 
@@ -341,6 +355,63 @@ footer {
     width: 50px;
 }
 
+/* Contacto */
+.contacto_main {
+    background-color: #e30520;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacto_main>article {
+    margin-top: 20px;
+}
+
+.contacto_list {
+    color: white;
+    list-style: none;
+}
+
+.contacto_li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacto_li>a:hover {
+    text-decoration: underline;
+
+}
+
+.form_contacto {
+    background-color: #b8bab8;
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+.form_contacto_2 {
+    display: none;
+    background-color: #b8bab8;
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+.send_button {
+    width: 100%;
+    height: 100%;
+    margin: 15px 0px;
+    border: 5px solid red;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+.form_item {
+    width: 100%;
+    margin: 12px 0px;
+}
+
 /* Responsive */
 @media screen and (max-width:1200px) {
     main {
@@ -354,7 +425,8 @@ footer {
 
 @media screen and (max-width: 991px) {
 
-    .navbar-brand {
+    .navbar-brand,
+    main {
         display: block;
     }
 }
@@ -371,10 +443,6 @@ footer {
         width: 50%;
     }
 
-    main {
-        display: block;
-    }
-
     aside {
         display: flex;
         flex-direction: row;
@@ -382,14 +450,8 @@ footer {
         justify-content: center;
     }
 
-    .aside_table {
-        display: none;
-    }
-
-    .clock_form {
-        display: none;
-    }
-
+    .aside_table,
+    .clock_form,
     .download_link_container {
         display: none;
     }
@@ -434,10 +496,24 @@ footer {
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:456px) {
     aside {
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+
+    .form_contacto {
+        display: none;
+    }
+
+    .form_contacto_2 {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .contacto_main {
+        background-color: #b8bab8;
+        flex-direction: column;
     }
 }
