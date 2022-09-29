@@ -557,9 +557,11 @@ video {
         background-color: #b8bab8;
         flex-direction: column;
     }
+
+    .card_mio {
+        width: 220px;
+    }
 }
-
-
 
 @media screen and (max-width:548px) {
     .card {
@@ -598,6 +600,13 @@ video {
         align-items: center;
         justify-content: center;
     }
+}
+
+@media screen and (max-width:500px) {
+    .card_mio {
+        width: 500px;
+    }
+
 }
 
 @media screen and (max-width:456px) {
