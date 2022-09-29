@@ -302,26 +302,39 @@ video {
     text-align: center;
     margin-right: 5px;
     margin-left: 5px;
-    filter: opacity(0.7)
+    filter: opacity(0.7);
 }
 
 .titulo_container:hover {
     color: #e30520;
     cursor: pointer;
-    filter: opacity(1)
+    filter: opacity(1);
+}
+
+.titulos_section_title,
+.titulos_container {
+    border-bottom: 4px solid #e30520;
+}
+
+.titulos_section_title {
+    width: 60%;
 }
 
 .titulo_container>img {
     width: 80px;
 }
 
-
 .titulos_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
+    padding: 20px;
+}
+
+.i_container {
+    text-align: end;
 }
 
 .modal-header {
@@ -339,15 +352,14 @@ video {
     padding: 25px;
     background-color: #e30520;
     color: white;
+    text-align: justify;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .modal-body>img {
     width: 100%;
     margin-bottom: 10px;
-}
-
-.modal-body {
-    text-align: justify;
 }
 
 .titulo_img {
@@ -439,11 +451,12 @@ video {
 
 .card_mio_img {
     width: 100%;
-    filter: opacity(0.6)
+    filter: opacity(0.6);
 }
 
 .card_mio_img:hover {
-    filter: opacity(1)
+    filter: opacity(1) drop-shadow(0px 0px 15px black);
+
 }
 
 .card_mio_footer {
