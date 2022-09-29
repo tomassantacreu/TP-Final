@@ -543,6 +543,24 @@ video {
     }
 }
 
+@media screen and (max-width:700px) {
+    .form_contacto {
+        display: none;
+    }
+
+    .form_contacto_2 {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .contacto_main {
+        background-color: #b8bab8;
+        flex-direction: column;
+    }
+}
+
+
+
 @media screen and (max-width:548px) {
     .card {
         display: flex;
@@ -587,19 +605,5 @@ video {
         display: flex;
         flex-direction: column;
         height: 100%;
-    }
-
-    .form_contacto {
-        display: none;
-    }
-
-    .form_contacto_2 {
-        display: block;
-        margin-top: 0px;
-    }
-
-    .contacto_main {
-        background-color: #b8bab8;
-        flex-direction: column;
     }
 }
