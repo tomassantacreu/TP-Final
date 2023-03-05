@@ -100,9 +100,9 @@ article {
 
 .banner>h1 {
     display: inline-block;
-    color: white;
+    color: rgb(255, 255, 255);
     border-bottom: #e30520 5px solid;
-    text-shadow: 0px 0px 10px #000000;
+    text-shadow: 0px 0px 5px #000000;
     margin-left: 10px;
 }
 
